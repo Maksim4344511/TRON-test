@@ -220,6 +220,11 @@ p
 	display: flex;
 	flex-direction: column;
 	margin-top: 10px;
+	@media (max-width: 576px){
+
+		width: 50%;
+
+	}
 }
 
 .request__section
@@ -228,6 +233,12 @@ p
 	justify-content: space-around;
 	width: 100%;
 	margin-top: 10px;
+	@media (max-width: 576px){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
 }
 
 .request label
@@ -247,6 +258,10 @@ p
 	margin-bottom: 8px;
 	font-family: Arial,sans-serif;
 	font-size: 16px;
+	@media (max-width: 576px){
+		width: 150px;
+
+	}
 }
 
 .sale-btn
@@ -262,6 +277,12 @@ p
 	border-radius: 4px;
 	border: none;
 	cursor: pointer;
+	@media (max-width: 576px){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
 }
 
 .comment

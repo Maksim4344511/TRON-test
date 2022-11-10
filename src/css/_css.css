@@ -3,8 +3,13 @@
     outline: none;
 }
 
+
 .padding-callbacker {
     padding: 10px;
+    @media (max-width: 576px){
+        padding: 0px;
+
+	}
 }
 
 .modal-callbacker-show {
@@ -48,6 +53,7 @@
 
 .modal-callbacker .modal-callbacker-top {
     top: 50%;
+   
 }
 
 .modal-callbacker .modal-callbacker-left {
@@ -56,7 +62,7 @@
 
 .modal-callbacker-block {
     position: relative;
-    width: 600px;
+    width: 100%;
     background: #FFF;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
     border: 1px solid #3A87AD;
@@ -69,7 +75,7 @@
 
 .modal-callbacker .content-callbacker {
     background: #ffffff repeat;
-    width: auto;
+    width: 100%;
 	text-align: center;
     overflow: hidden;
     margin: 0;
@@ -78,7 +84,7 @@
 
 @media screen and (max-width: 540px) {
     .modal-callbacker-block {
-        width: 380px;
+        width: 100%;
     }
 
     .modal-callbacker-block .title {
@@ -89,7 +95,7 @@
 
 @media screen and (max-width: 405px) {
     .modal-callbacker-block {
-        width: 300px;
+        width: 100%;
     }
 
     .modal-callbacker-block .title-callbacker {
@@ -516,6 +522,9 @@
     }
 }
 
+.padding-callbacker p{
+    word-wrap: normal;
+}
 #callbacker .modal-callbacker-block {
     border: none;
     box-shadow: none;
@@ -524,7 +533,7 @@
     overflow: hidden;
     color: #222222;
     line-height: 1.5 !important;
-    width: 500px;
+    width: 100%;
 }
 
 #callbacker .modal-callbacker-block .title-callbacker {
@@ -545,7 +554,7 @@
 	height: 30px;
 	position: absolute;
 	right: 20px;
-	top: 10px;
+	top: 20px;
 	cursor: pointer;
 }
 
@@ -555,6 +564,12 @@
 
 #callbacker .modal-callbacker-block .padding-callbacker {
     padding: 15px;
+    @media (max-width: 576px){
+
+        padding: 0px;
+
+	}
+    
 }
 
 #callbacker .modal-callbacker-block p {
